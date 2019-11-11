@@ -2,7 +2,7 @@
   <div>
     <mt-field label="邮箱" state="success" v-model="sub.email"></mt-field>
     <span>{{sub.a}}</span>
-    <div>{{sub.b.name}}</div>
+    <div @click="change">{{sub.b.name}}</div>
     <p v-for="item in list" :key="item">{{item}}</p>
   </div>
 </template>
@@ -37,7 +37,7 @@ export default {
 //      }
 //    })
     // 在data实例化之前注册的属性，层次深也可以监测到
-    this.sub.b.name = 'hello'
+    // this.sub.b.name = 'hello'
     // delete 竟然可以监测到变化
     // delete this.sub.a;
     console.log(this.sub, 888)
@@ -46,7 +46,7 @@ export default {
     this.$set(this.sub, 'email', 6666);
 
     // 数组，官方说监测不到，实际是可以监测到的
-    this.list.length = 3;
+    // this.list.length = 3;
     console.log(this.list, 777);
 
     // 数组，修改值
@@ -54,7 +54,9 @@ export default {
   },
 
   methods: {
-
+    change() {
+      this.sub.b.name = 'hello';
+    }
   }
 }
 </script>
