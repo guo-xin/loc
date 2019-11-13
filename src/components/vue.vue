@@ -13,6 +13,7 @@ export default {
     return {
       test: false,
       test1: true,
+      test2: '',
       sub: {
         a: 222,
         b: {
