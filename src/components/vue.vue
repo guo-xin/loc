@@ -11,10 +11,8 @@
 export default {
   data () {
     return {
-      test: false,
-      test1: true,
-      test2: '',
-      test3: '',
+      test: 'bug',
+      test1: '',
       sub: {
         a: 222,
         b: {
