@@ -12,6 +12,7 @@ export default {
   data () {
     return {
       test: 'bug',
+      test1: '',
       sub: {
         a: 222,
         b: {
