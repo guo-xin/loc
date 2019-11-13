@@ -11,6 +11,8 @@
 export default {
   data () {
     return {
+      test: 'hook',
+      test1: 'develop',
       sub: {
         a: 222,
         b: {
