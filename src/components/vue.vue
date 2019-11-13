@@ -11,10 +11,6 @@
 export default {
   data () {
     return {
-      test: 'bug',
-      test1: '',
-      test2: 'test merge',
-      hook: '',
       sub: {
         a: 222,
         b: {
