@@ -13,6 +13,7 @@ export default {
     return {
       test: 'hook',
       test1: 'develop',
+      hook: 'test cesghui',
       sub: {
         a: 222,
         b: {
