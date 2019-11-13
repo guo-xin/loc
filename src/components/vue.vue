@@ -13,6 +13,7 @@ export default {
     return {
       test: 'bug',
       test1: '',
+      test2: 'test merge',
       sub: {
         a: 222,
         b: {
