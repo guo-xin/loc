@@ -3,7 +3,7 @@
     <div class="hello">
       <div class="first" @click="open">1111</div>
       <div class="second">2222</div>
-      <div class="third">3333</div>
+      <div :class="`third${name}`">{{`text${name}`}}</div>
     </div>
     <mt-datetime-picker
       v-model="form.pickerVisible"
