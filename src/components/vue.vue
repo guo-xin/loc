@@ -12,6 +12,7 @@ export default {
   data () {
     return {
       test: 'hook',
+      testFlag: 1204,
       test1: 'develop',
       hook: 'test cesghui',
       sub: {
