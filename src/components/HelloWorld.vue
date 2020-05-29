@@ -24,6 +24,7 @@ export default {
   data () {
     return {
       test: '测试hook',
+      
       name: 'guoxin',
       form: {
         pickerVisible: new Date(),
