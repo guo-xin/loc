@@ -26,7 +26,8 @@ export default {
   },
 
   created() {
-
+    this.list.push('test');
+    console.log(this.list, 1111)
   },
 
   mounted() {
@@ -51,7 +52,7 @@ export default {
     // this.list.length = 3;
     console.log(this.list, 777);
 
-    // 数组，修改值
+    // 数组，修改值，影响前面list的输出结果
     this.$set(this.list, 2, 'second')
   },
 

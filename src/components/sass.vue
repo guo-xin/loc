@@ -14,12 +14,12 @@ export default {
   data () {
     return {
       email: '',
-    TabLists: [
-      {
-        name: 'guoxin',
-        value: '2222'
-      }
-    ]
+      TabLists: [
+        {
+          name: 'guoxin',
+          value: '2222'
+        }
+      ]
     }
   },
 

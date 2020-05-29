@@ -52,6 +52,9 @@ export default {
     console.log(`--${this.name}--destroyed`)
   },
   methods: {
+    /**
+     * @desc: 通过ref调用子组件里面的方法
+     */
     open () {
       this.$refs['picker'].open()
     },
