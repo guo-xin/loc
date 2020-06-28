@@ -17,59 +17,64 @@ Vue.use(Router)
 export default new Router({
   routes: [
     {
-      path: '/',
-      name: 'HelloWorld',
+      path: "/",
+      name: "HelloWorld",
       component: HelloWorld
     },
     {
-      path: '/table',
-      name: 'table',
+      path: "/table",
+      name: "table",
       component: table
     },
     {
-      path: '/parent',
-      name: 'parent',
+      path: "/parent",
+      name: "parent",
       component: parent
     },
     {
-      path: '/suanfa',
-      name: 'suanfa',
+      path: "/suanfa",
+      name: "suanfa",
       component: suanfa
     },
     {
-      path: '/extend',
-      name: 'extend',
+      path: "/extend",
+      name: "extend",
       component: extend
     },
     {
-      path: '/array',
-      name: 'array',
+      path: "/array",
+      name: "array",
       component: array
     },
     {
-      path: '/model',
-      name: 'model',
+      path: "/model",
+      name: "model",
       component: model
     },
     {
-      path: '/sass',
-      name: 'sass',
+      path: "/sass",
+      name: "sass",
       component: sass
     },
     {
-      path: '/clone',
-      name: 'clone',
+      path: "/clone",
+      name: "clone",
       component: clone
     },
     {
-      path: '/promise',
-      name: 'promise',
+      path: "/promise",
+      name: "promise",
       component: promise
     },
     {
-      path: '/vue',
-      name: 'vue',
+      path: "/vue",
+      name: "vue",
       component: vue
+    },
+    {
+      path: "/arrow",
+      name: "arrow",
+      component: () => import(/* webpackChunkName: "arrow" */ "@/components/arrow.vue")
     }
   ]
-})
+});

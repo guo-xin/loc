@@ -16,6 +16,8 @@
     </mt-datetime-picker>
 
     <mt-field label="邮箱" state="success" v-model="form.email"></mt-field>
+
+    <input type="text" v-model='testInput'>
   </div>
 </template>
 
@@ -28,7 +30,8 @@ export default {
       form: {
         pickerVisible: new Date(),
         email: '333333'
-      }
+      },
+      testInput: '',
     }
   },
   watch: {
@@ -48,6 +51,7 @@ export default {
   },
 
   mounted () {
+    this.testInput = 2222222222
     const a = {'name': 'guoxin'};
     a.name = 'hanmegnqi';
     a.value = '6666';
@@ -62,7 +66,8 @@ export default {
     },
     handleConfirm (val) {
       this.form.email = val
-    }
+    },
+
   }
 }
 </script>
