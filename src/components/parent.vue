@@ -4,14 +4,15 @@
     <children1
       v-if="showChildren"
       va="guoxin"
-      :email="value"
+      :email="email"
       @changeValue="changeValue"
       class="a"
       id="ddddd"
     ></children1>
     <children2></children2>
 
-    <mt-button type="primary" @click="focusInput">input</mt-button>
+    <mt-button type="primary" @click="focusInput">parent展示children</mt-button>
+    <mt-field label="邮箱" placeholder="Input email" v-model="email"></mt-field>
   </div>
 </template>
 
@@ -24,7 +25,8 @@ export default {
     return {
       showChildren: false,
       value: "Hello",
-      name: "parent"
+      name: "parent",
+      email: ''
     };
   },
 

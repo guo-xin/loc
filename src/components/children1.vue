@@ -6,9 +6,7 @@
       placeholder="请输入用户名"
       v-model="username"
     ></mt-field>
-    <grandSon v-bind="$props"></grandSon>
-
-    <textarea type="text" ref="input"  class="textarea"/>
+    <grand-son v-bind="$props"></grand-son>
   </div>
 </template>
 
@@ -20,9 +18,29 @@ export default {
       name: "children1"
     };
   },
-  props: ["va", "email", "id"],
+
+  props: {
+    va: {
+      type: String,
+      // 必传
+      required: true
+    },
+    email: {
+      // 自定义校验规则
+      validator (value) {
+        return /^\w+$/.test(value)
+      },
+      
+    },
+    id: {
+      type: String,
+      // 默认值
+      default: ''
+    }
+  },
+
   components: {
-    grandSon
+    "grand-son": grandSon
   },
 
   watch: {
@@ -72,9 +90,4 @@ export default {
 </script>
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-.textarea {
-    position: fixed;
-    left: 0;
-    bottom: 0
-  }
 </style>
